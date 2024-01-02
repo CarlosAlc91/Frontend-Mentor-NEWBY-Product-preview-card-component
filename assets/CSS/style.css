@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* variables definition */
+
+:root {
+  --color-bg: hsl(30, 38%, 92%);
+  --color-btn: hsl(158, 36%, 37%);
+
+  --color-title: hsl(212, 21%, 14%);
+  --color-text: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --font-text: 'Fraunces', serif;
+  --font-price: 'Montserrat',
+    sans-serif;
+}
+
+/* GENERAL STYLES */
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 30px 20px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  background-color: var(--color-bg);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  max-width: 375px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__img {
+  max-width: 375px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.main {
+  padding: 25px 15px;
+  background-color: var(--color-white);
+  border-radius: 0 0 10px 10px;
+}
+
+.main__name {
+  padding: 10px 0;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: var(--font-price);
+  font-size: 13px;
+}
+
+.main__title {
+  margin-bottom: 15px;
+  font-size: 2.4rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: var(--font-text);
+}
+
+.main__text {
+  margin-bottom: 20px;
+  color: var(--color-text);
+  font-family: var(--font-price);
+}
+
+.main__prices {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.price__one {
+  color: var(--color-btn);
+  font-family: var(--font-text);
+  font-size: 3.5rem;
+}
+
+.price__two {
+  font-family: var(--font-price);
+  color: var(--color-text);
+  text-decoration: line-through;
+}
+
+.main__btn {
+  padding: 15px;
+  border-radius: 7px;
+  color: var(--color-white);
+  background-color: var(--color-btn);
+  font-family: var(--font-price);
+  font-weight: bold;
+}
